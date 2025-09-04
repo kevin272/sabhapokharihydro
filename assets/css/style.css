@@ -8528,7 +8528,7 @@ Background Image
 }
 
 .bg_image--17 {
-  background-image: url(../images/bg/bg-image-17.jpg);
+  background-image: url(https://sabhapokharihydro.com.np/assets/tenant/uploads/media-uploader/sabhapokharihydro/sabhapokhari-hydropower-power-house1753979962.jpg);
 }
 
 .bg_image--18 {
@@ -11606,6 +11606,7 @@ header.header-one .header--one-main {
 }
 
 header.header-one .header--one-main .logo-area {
+  
   padding: 40px 10px 40px 0;
   display: block;
 }
@@ -11811,6 +11812,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 .main-haeder-wrapper-h2 a.logo-area {
+  scale:0.2;
   padding: 23px 0;
   display: block;
 }
@@ -13434,8 +13436,11 @@ nav ul li a {
 }
 
 .bg-breadcrumb {
-  background-image: url(../images/banner/breadcrumb/01.jpg);
-}
+ background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://sabhapokharihydro.com.np/assets/tenant/uploads/media-uploader/sabhapokharihydro/9e8e19ea-17fe-4b83-9949-37c26264e8fd1745564642.jpg");
+  background-size: cover;
+  background-position: center;}
 
 .banner-one-swiper--wrapper-area .banner-main-wrapper-one .pre-title {
   transition-delay: 0.5s;
@@ -14331,14 +14336,24 @@ nav ul li a {
 }
 
 .banner_bg-four {
-  background-image: url(../images/banner/15.jpg);
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    url(https://sabhapokharihydro.com.np/assets/tenant/uploads/media-uploader/sabhapokharihydro/sabhapokhari-hydropower-power-house1753979962.jpg);
+  background-size: cover;
+  background-position: center;
   height: 980px;
 }
 
-.banner_bg-four.two {
-  background-image: url(../images/banner/17.jpg);
-}
 
+
+.banner_bg-four.two {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    url(https://sabhapokharihydro.com.np/assets/tenant/uploads/media-uploader/sabhapokharihydro/9e8e19ea-17fe-4b83-9949-37c26264e8fd1745564642.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 980px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner_bg-four {
     height: 750px;
@@ -19532,7 +19547,7 @@ p {
 
 .single-solari-service-start {
   padding: 30px;
-  background-image: url(../images/service/20.png);
+  background-image: url(https://plus.unsplash.com/premium_photo-1681992176054-e2f410194b02?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19547,15 +19562,15 @@ p {
 }
 
 .single-solari-service-start.two {
-  background-image: url(../images/service/29.png);
+  background-image: url(https://images.unsplash.com/photo-1615774925655-a0e97fc85c14?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .single-solari-service-start.three {
-  background-image: url(../images/service/30.png);
+  background-image: url(https://images.unsplash.com/photo-1720670996872-370771b91159?q=80&w=642&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .single-solari-service-start.four {
-  background-image: url(../images/service/31.png);
+  background-image: url(https://plus.unsplash.com/premium_photo-1679251457997-ace18653de34?q=80&w=670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .single-solari-service-start:hover .icon-area {
@@ -29190,4 +29205,3 @@ edit .quantity-edit button {
   color: var(--color-primary-2);
 }
 
-/*# sourceMappingURL=style.css.map */
