@@ -11812,7 +11812,9 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 .main-haeder-wrapper-h2 a.logo-area {
-  scale:0.2;
+  scale: 1;
+  width: 150%;
+  height: auto;
   padding: 23px 0;
   display: block;
 }
