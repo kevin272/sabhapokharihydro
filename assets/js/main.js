@@ -1093,7 +1093,17 @@
     }
   });
 })(jQuery, window)
-
+/*=== GSAP ScrollSmoother Activation ==========*/
+if (typeof ScrollSmoother !== "undefined") {
+  document.addEventListener("DOMContentLoaded", function () {
+    ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1.2,
+      effects: true
+    });
+  });
+}
 
 
 
