@@ -8704,7 +8704,7 @@ Background Image
 }
 
 .bg_tr-image--17 {
-  background-image: url(../images/bg/bg-image-17.png) !important;
+  background-image: url(https://sabhapokharihydro.com.np/assets/tenant/uploads/media-uploader/sabhapokharihydro/sabhapokhari-hydropower-power-house1753979962.jpg) !important;
   background-size: cover !important;
 }
 
@@ -11600,13 +11600,40 @@ header.header-one {
   background: #f2f2f2;
   position: relative;
 }
+/* Responsive logo-area sizing */
+.logo-area {
+  display: inline-block;
+  padding: 10px 10px;
+  transition: all 0.3s;
+}
+
+.logo-area img {
+  width: auto;
+  height: 100%;        /* fills container height */
+  max-height: 100px;   /* slightly smaller desktop logo */
+  object-fit: contain;
+  transition: height 0.3s, max-width 0.3s;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .logo-area img {
+    max-height: 80px;   /* slightly smaller tablet logo */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .logo-area img {
+    max-height: 100px;   /* slightly smaller mobile logo */
+  }
+}
 
 header.header-one .header--one-main {
   position: relative;
 }
 
 header.header-one .header--one-main .logo-area {
-  
   padding: 40px 10px 40px 0;
   display: block;
 }
@@ -11812,28 +11839,38 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 .main-haeder-wrapper-h2 a.logo-area {
-  scale: 1;
-  width: 150%;
+  display: inline-block;
+  width: auto;         /* let it size naturally */
   height: auto;
-  padding: 23px 0;
-  display: block;
 }
 
+.main-haeder-wrapper-h2 a.logo-area img {
+  width: auto;
+  height: 160px;        /* desktop size */
+  max-width: 360px;    /* constrain width */
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-haeder-wrapper-h2 a.logo-area img {
+    height: 60px;
+    max-width: 180px;
+  }
+}
+
+/* Mobile */
 @media only screen and (max-width: 767px) {
   .main-haeder-wrapper-h2 a.logo-area {
     padding: 10px 0;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-haeder-wrapper-h2 a.logo-area img {
-    max-width: 140px;
+    height: auto;
+    max-width: 300px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .main-haeder-wrapper-h2 a.logo-area img {
-    max-width: 120px;
-  }
-}
+
 .main-haeder-wrapper-h2 .actions-area {
   display: flex;
   align-items: center;
@@ -12010,17 +12047,22 @@ header.header-four {
   header.header-four {
     padding: 20px;
   }
-}
+}/* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   header.header-four .header-left .logo-area img {
-    max-width: 120px;
+    max-width: 160px; /* increase from 120px */
+    height: auto;      /* preserve aspect ratio */
   }
 }
+
+/* Mobile */
 @media only screen and (max-width: 767px) {
   header.header-four .header-left .logo-area img {
-    max-width: 120px;
+    max-width: 300px; /* increase if needed */
+    height: auto;
   }
 }
+
 header.header-four .nav-area .main-nav-one ul li.has-dropdown a.nav-link {
   color: #fff;
 }
@@ -14363,6 +14405,17 @@ nav ul li a {
 }
 @media only screen and (max-width: 767px) {
   .banner_bg-four {
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner_bg-four.two {
+    height: 750px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner_bg-four.two {
     height: 650px;
   }
 }
