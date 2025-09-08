@@ -11609,8 +11609,8 @@ header.header-one {
 
 .logo-area img {
   width: auto;
-  height: 100%;        /* fills container height */
-  max-height: 100px;   /* slightly smaller desktop logo */
+  height: 80%;        /* fills container height */
+  max-height: 80px;   /* slightly smaller desktop logo */
   object-fit: contain;
   transition: height 0.3s, max-width 0.3s;
 }
